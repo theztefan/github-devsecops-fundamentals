@@ -13,7 +13,7 @@ jobs:
       - uses: actions/create-github-app-token@v1
         id: generate-app-token
         with:
-          app-id: ${{ vars.APP_ID_ACTIONS_ASSISTANT }}
+          app-id: ${{ secrets.APP_ID_ACTIONS_ASSISTANT }}
           private-key: ${{ secrets.APP_PRIVATE_KEY_ACTIONS_ASSISTANT }}
 
       - name: Checkout
